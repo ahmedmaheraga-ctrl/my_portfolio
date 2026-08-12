@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Maher | Software Engineer & Microbiologist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#06b6d4', // Cyan Accent
+                            600: '#0891b2',
+                            glow: 'rgba(6, 182, 212, 0.15)'
+                        },
+                        darkbg: '#0a0f1d',
+                        cardbg: '#111827'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-darkbg text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card border-b-0 border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-extrabold tracking-wider text-white">AM<span class="text-brand-500">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-500 transition">About</a>
+                <a href="#skills" class="hover:text-brand-500 transition">Skills</a>
+                <a href="#projects" class="hover:text-brand-500 transition">Projects</a>
+                <a href="#experience" class="hover:text-brand-500 transition">Experience</a>
+                <a href="#contact" class="hover:text-brand-500 transition">Contact</a>
+            </div>
+            <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-500 font-semibold text-sm hover:bg-brand-500 hover:text-white transition-all duration-300">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-24 pb-12 relative overflow-hidden">
+        <!-- Background Glowing Orbs -->
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-brand-500 text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                    <span>Available for Collaborations</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight">
+                    Hi, I'm <span class="text-gradient">Ahmed Maher</span>
+                </h1>
+                <p class="text-xl font-medium text-slate-400">
+                    Microbiologist & Passionate Python Developer
+                </p>
+                <p class="text-slate-400 text-base leading-relaxed max-w-xl">
+                    Bridging scientific analytical precision with software engineering. Focused on building machine learning algorithms, data processing systems, and clean Python architectures.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#projects" class="px-7 py-3.5 rounded-xl bg-brand-500 text-white font-bold text-sm shadow-lg shadow-brand-500/25 hover:bg-brand-600 hover:shadow-brand-500/40 transition-all duration-300">
+                        Explore Work <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="https://github.com/ahmedmaheraga-ctrl" target="_blank" rel="noopener" class="px-7 py-3.5 rounded-xl glass-card text-slate-200 font-bold text-sm hover:bg-slate-800 transition duration-300">
+                        <i class="fa-brands fa-github mr-2"></i> GitHub Profile
+                    </a>
+                </div>
+            </div>
+            
+            <!-- GitHub Avatar Profile Frame -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-500 to-indigo-500 rounded-3xl rotate-6 opacity-40 blur-lg"></div>
+                    <div class="glass-card w-full h-full rounded-3xl p-3 border border-slate-700/50 relative z-10 overflow-hidden">
+                        <img src="https://github.com/ahmedmaheraga-ctrl.png" alt="Ahmed Maher" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-2">About Me</h2>
+                <p class="text-3xl font-extrabold text-white">Scientific Mindset Meets Software Engineering</p>
+            </div>
+
+            <div class="glass-card rounded-2xl p-8 sm:p-10 border border-slate-800">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="space-y-4">
+                        <div class="text-3xl font-bold text-brand-500">01.</div>
+                        <h3 class="text-xl font-bold text-white">Analytical Approach</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Applying rigorous biological research logic directly to software design and algorithmic problem-solving.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="text-3xl font-bold text-indigo-400">02.</div>
+                        <h3 class="text-xl font-bold text-white">Python & Data ML</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Experienced in Scikit-Learn classification pipelines, evaluation matrices, and automated decision workflows.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="text-3xl font-bold text-purple-400">03.</div>
+                        <h3 class="text-xl font-bold text-white">Continuous Growth</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Driven by curiosity in system architecture, network protocols, cybersecurity, and advanced AI frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-2">Capabilities</h2>
+                <p class="text-3xl font-extrabold text-white">Technical Toolkit</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Python Core</h3>
+                    <p class="text-xs text-slate-400">OOP, Data Structures, Modular Code, Algorithm Design</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Machine Learning</h3>
+                    <p class="text-xs text-slate-400">Scikit-Learn, KNN Classifiers, StandardScaler, Confusion Matrix</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Tools & Environments</h3>
+                    <p class="text-xs text-slate-400">Git, GitHub Workflows, VS Code Configuration</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Fields of Interest</h3>
+                    <p class="text-xs text-slate-400">AI Architectures, Cybersecurity Fundamentals, Networking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-2">Portfolio</h2>
+                    <p class="text-3xl font-extrabold text-white">Featured Work</p>
+                </div>
+                <a href="https://github.com/ahmedmaheraga-ctrl" target="_blank" rel="noopener" class="mt-4 md:mt-0 text-sm font-semibold text-brand-500 hover:text-brand-400 transition">
+                    View All Repositories <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1: Rule-Based AI Chatbot (Now First Project) -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 group">
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative bg-slate-900">
+                            <img src="chatbot-preview.jpg" alt="Rule-Based AI Chatbot" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='chatbot-preview.png';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-indigo-500/80 backdrop-blur-md text-white text-xs font-semibold shadow-lg">AI Architecture</span>
+                        </div>
+
+                        <div class="p-8 pt-4">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-bold text-white group-hover:text-indigo-400 transition">Rule-Based AI Chatbot</h3>
+                                <a href="https://github.com/ahmedmaheraga-ctrl/Project-1-Rule-Based-AI-Chatbot..git" target="_blank" rel="noopener" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                A logic-driven conversational agent that utilizes conditional structures and dynamic dictionary lookups to process user prompts and deliver accurate response loops.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="px-8 pb-6 flex flex-wrap items-center justify-between gap-2 pt-4 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-xs text-slate-300 font-medium">Python</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-xs text-slate-300 font-medium">Control Flow</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-xs text-slate-300 font-medium">Git</span>
+                        </div>
+                        <a href="https://github.com/ahmedmaheraga-ctrl/Project-1-Rule-Based-AI-Chatbot..git" target="_blank" rel="noopener" class="text-xs font-bold text-indigo-400 hover:underline">
+                            Source Code <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Data classification using AI (Now Second Project) -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 group">
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative bg-slate-900">
+                            <img src="data-classification-preview.jpg" alt="Data classification using AI" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='data-classification-preview.png';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-brand-500/80 backdrop-blur-md text-white text-xs font-semibold shadow-lg">Machine Learning</span>
+                        </div>
+                        
+                        <div class="p-8 pt-4">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-bold text-white group-hover:text-brand-500 transition">Data classification using AI</h3>
+                                <a href="https://github.com/ahmedmaheraga-ctrl/DecodeLabs-Internship.git" target="_blank" rel="noopener" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Constructed an end-to-end Machine Learning classification pipeline using Scikit-Learn and the Iris Dataset. Handled feature scaling with StandardScaler, KNN model training (K=5), and validation via Confusion Matrix.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="px-8 pb-6 flex flex-wrap items-center justify-between gap-2 pt-4 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-xs text-slate-300 font-medium">Python</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-xs text-slate-300 font-medium">Scikit-Learn</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-xs text-slate-300 font-medium">KNN</span>
+                        </div>
+                        <a href="https://github.com/ahmedmaheraga-ctrl/DecodeLabs-Internship.git" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 hover:underline">
+                            Source Code <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-slate-950/50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-2">History</h2>
+                <p class="text-3xl font-extrabold text-white">Experience & Background</p>
+            </div>
+
+            <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+                <!-- Item 1 -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-darkbg"></div>
+                    <div class="md:absolute md:-left-36 md:top-0 text-sm font-semibold text-slate-400 mb-2 md:mb-0">Present</div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h3 class="text-lg font-bold text-white">Microbiologist & Independent Developer</h3>
+                        <p class="text-xs text-brand-500 font-medium mb-3">Self-Directed & Professional</p>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                            <li>Applied laboratory analytical research principles to computational logic and program optimization.</li>
+                            <li>Engineered and trained machine learning classification algorithms using Scikit-Learn.</li>
+                            <li>Published open-source codebase on GitHub with version control practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-800 relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <h2 class="text-3xl font-extrabold text-white mb-3">Let's Connect</h2>
+                    <p class="text-slate-400 text-sm">Open for technical discussions, software projects, and collaborations.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-4 mb-10">
+                    <a href="mailto:ahmed.maher.aga@gmail.com" class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-brand-500/50 flex flex-col items-center text-center transition">
+                        <i class="fa-solid fa-envelope text-brand-500 text-xl mb-2"></i>
+                        <span class="text-xs font-semibold text-white">Email</span>
+                        <span class="text-[10px] text-slate-400 mt-1 truncate max-w-full">ahmed.maher.aga@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/ahmedmaheraga-ctrl" target="_blank" rel="noopener" class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-brand-500/50 flex flex-col items-center text-center transition">
+                        <i class="fa-brands fa-github text-brand-500 text-xl mb-2"></i>
+                        <span class="text-xs font-semibold text-white">GitHub</span>
+                        <span class="text-[10px] text-slate-400 mt-1">ahmedmaheraga-ctrl</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-maher-b95634427" target="_blank" rel="noopener" class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-brand-500/50 flex flex-col items-center text-center transition">
+                        <i class="fa-brands fa-linkedin text-brand-500 text-xl mb-2"></i>
+                        <span class="text-xs font-semibold text-white">LinkedIn</span>
+                        <span class="text-[10px] text-slate-400 mt-1">Ahmed Maher</span>
+                    </a>
+                </div>
+
+                <!-- Form -->
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Message Sent!');">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+                        <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition">
+                    </div>
+                    <textarea rows="4" placeholder="Your Message" required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white text-sm focus:outline-none focus:border-brand-500 transition"></textarea>
+                    <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-500 text-white font-bold text-sm shadow-lg shadow-brand-500/20 hover:bg-brand-600 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Ahmed Maher. Built with precision and modern design.</p>
+    </footer>
+
+</body>
+</html>
